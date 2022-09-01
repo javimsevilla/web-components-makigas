@@ -16,3 +16,8 @@ This is the full course list 👉 [Web Components (YouTube <img src="https://www
 10. [🎥 Web Components – 10. Customized built-in elements](https://www.youtube.com/watch?v=neko6u1vHcY&list=PLTd5ehIj0goNQNCgtu-M2oGGpyQ1m6nxo&index=10)
 11. [🎥 Web Components – 11. Polyfills para Web Components](https://www.youtube.com/watch?v=neko6u1vHcY&list=PLTd5ehIj0goNQNCgtu-M2oGGpyQ1m6nxo&index=11)
 12. [🎥 Web Components – 12. ✱ Asterisco: The end... por el momento](https://www.youtube.com/watch?v=neko6u1vHcY&list=PLTd5ehIj0goNQNCgtu-M2oGGpyQ1m6nxo&index=12)
+
+## Usefull links
+
+- https://github.com/w3c/webcomponents
+- https://www.webcomponents.org
