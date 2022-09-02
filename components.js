@@ -3,6 +3,11 @@
 
 class BasicGreetingElement extends HTMLElement {
 
+  static observedAttributes = ['name'];
+
+  #name = 'World';
+  #title;
+
   constructor() {
     super();
   }
@@ -11,9 +16,22 @@ class BasicGreetingElement extends HTMLElement {
    * Executes when element is added to the DOM
    */
   connectedCallback() {
-    let title = document.createElement('h1');
-    title.innerHTML = 'Hello, World!';
-    this.append(title);
+    this.#render();
+  }
+
+  attributeChangedCallback(attributeName, oldValue, newValue) {
+    if (attributeName === 'name') {
+      this.#name = newValue;
+    }
+    this.#render();
+  }
+
+  #render() {
+    if (this.childElementCount === 0) {
+      this.#title = document.createElement('h1');
+      this.append(this.#title);
+    }
+    this.#title.innerHTML = `Hello, ${this.#name}!`;
   }
 
 }
